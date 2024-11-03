@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: #fff; 
+}
+
+/* Landing Page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #000; 
+}
+
+.image-section img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quote-section {
+    margin-left: 50px;
+}
+
+.quote-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.quote-section p {
+    font-size: 1.2rem;
+}
+
+/* Introduction Section */
+.intro-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #000; 
+}
+
+.intro-container h1 {
+    font-size: 2.5rem;
+}
+
+.intro-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Achievements Section Styling */
+.achievements-container {
+    background-color: #000; 
+    padding: 50px;
+    text-align: center;
+}
+
+.achievements-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.achievement-card {
+    background-color: #222; 
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); 
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+}
+
+/* Ratan Tata News Section */
+.news-container {
+    background-color: #000; /* Black background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); 
+}
+
+.news-container h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#news-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.news-article {
+    background-color: #333; 
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.news-article h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.news-article p {
+    font-size: 14px;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-article img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Personal Note Section Styling */
+.personal-note-container {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 30px; 
+    border-radius: 8px;
+    margin: 20px auto; 
+    width: 50%; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.personal-note-container h2 {
+    font-size: 2rem; 
+    margin-bottom: 15px; 
+    color: #fff; 
+}
+
+.personal-note-container p {
+    font-size: 1.2rem; 
+    color: #fff; 
+    line-height: 1.6; 
+}
+
+/* Optional: Make the container responsive */
+@media (max-width: 768px) {
+    .cards-container, #news-articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-card, .news-article {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personal-note-container {
+        width: 90%; 
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; 
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+}
